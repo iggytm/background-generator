@@ -1,3 +1,8 @@
+var _ = require('lodash');
+
+var array = [1,2,3,4,5,6,7,8];
+console.log('answer', _.without(array, 3))
+
 var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
@@ -5,7 +10,7 @@ var body = document.getElementById("gradient");
 var defaultGradient = window.getComputedStyle(document.body, null).getPropertyValue("background-image");
 var button = document.querySelector(".button");
 
-function defaultColors() {
+function defaultColors() {	
 	document.querySelector(".color1").defaultValue = "#ff0000";
 	document.querySelector(".color2").defaultValue = "#ffff00";
 	css.textContent = defaultGradient + ";";
